@@ -1,0 +1,418 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+
+h1 {
+  padding: 8px;
+  background: #000000;
+  border-radius: 20px;
+  margin: 0;
+  font-size: 64px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: .8;
+}
+
+p {
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(19, 16, 16);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Inputs */
+
+input,
+textarea {
+  height: 32px;
+  padding: 0 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border: none;
+  box-shadow: inset 8px 3px 18px -4px rgba(0, 0, 0, 0.4);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Banner */
+
+#the_banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("img/Bill_Bowerman_and_Phil_Knight.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+}
+
+#the_banner h3 {
+  background: black;
+  border-radius: 12px;
+  padding: 0 24px;
+  font-size: 35px;
+  opacity: .8;
+  color: dark orange;
+}
+
+#the_banner2 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("img/nike2424.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+} 
+
+#the_banner3 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("img/AAA.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+}
+
+#the_banner4 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("img/Music.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+}
+
+#the_banner5 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("img/FSC.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+}
+
+
+
+/* Navigation */
+
+nav {
+  height: 72px;
+  background: #161616;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:27px;
+  display: flex;
+  z-index: 100;
+}
+
+nav a {
+  padding: 0 35px;
+  color: #eee;
+  transition: 0.4s;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #FF8C00;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.active {
+  color: #FF8C00;
+}
+
+
+
+#menu-icon {
+  height: 100%;
+  font-size: 28px;
+  padding: 0 4px;
+  color: rgb(253, 251, 251);
+  display: none;
+  align-items: center;
+}
+
+
+#search-icon {
+  color: rgb(255, 255, 255);
+  padding: 0 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#search-icon:hover {
+  color: #FF8C00;
+}
+
+
+
+
+/* Sections */
+
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+
+
+.card-picture:hover {
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+
+
+
+/* Button Read more */
+
+.click-readmore {
+  padding: 10px 26px;
+  border: 2px solid black;
+  display: inline-block;
+  margin-bottom:15px;
+  margin-left:15px;
+  font-weight: bold;
+  background: white;
+}
+
+
+
+footer {
+  background: black;
+  padding: 8px;
+  color: #eee;
+  display: flex;
+}
+
+footer a {
+  color: white;
+}
+
+
+footer #right-footer {
+  flex: 2;
+  padding: 8px;
+  text-align: center;
+}
+
+footer #socials-footer a .fa-facebook,
+footer #socials-footer a .fa-twitter,
+footer #socials-footer a .fa-instagram {
+ transition: 0.4s;
+}
+
+footer #socials-footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+footer #socials-footer ul li {
+  font-size: 48px;
+  padding: 16px;
+  transition: 0.4s;
+}
+
+footer #socials-footer ul li:hover a .fa-twitter {
+  color: #00BFFF;
+}
+
+footer #socials-footer ul li:hover a .fa-facebook {
+  color: #3b5998;
+  
+}
+
+footer #socials-footer ul li:hover a .fa-instagram {
+  color: #FF69B4;
+}
+
+
+
+
+
+
+#post-container{
+  display: flex;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+
+  #menu-icon {
+    display: flex;
+  }
+
+
+
+
+
+  
+}
+
+@media (max-width: 719px) {
+  main {
+    width: 95%;
+  }
+
+ 
+
+  .card,
+  .card .card-picture img {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer #left-footer {
+    flex: 1;
+    border-right: 0;
+    padding-left: 0;
+  }
+
+  footer #right-footer {
+    background: #eee;
+    color: black;
+  }
+
+  footer #right-footer a {
+    color: black;
+  }
+
+  footer #socials-footer a .fa-facebook,
+  footer #socials-footer a .fa-twitter,
+  footer #socials-footer a .fa-instagram {
+    color: pink;
+
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  #banner h3 {
+    font-size: 20px;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  #logo-img {
+    padding: 0;
+  }
+}
+
+@media (min-width: 720px) {
+  main {
+    width: 95%;
+  }
+  .card {
+    width: 45%;
+  }
+  .card .card-picture img {
+    width: 100%;
+  }
+}
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #f7f1eb;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #FF8C00;
+}
+
+
+.container1 {
+  border-radius: 5px;
+  background-color: #978b8b;
+  padding: 20px;
+}
+	
+	
